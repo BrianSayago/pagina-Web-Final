@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Cruze</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+    <style>
+        .solapas-info {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid white;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .solapas-info.active {
+            display: flex;
+        }
+        .innovacionCard {
+            cursor: pointer;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .innovacionCard:hover {
+            background-color: #f0f0f0;
+        }
+        .imagen-solapa {
+            max-width: 100%;
+            height: auto;
+            width: 350px;
+            flex-shrink: 0;
+        }
+        .container-performance {
+            gap: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .vertical-line {
+            width: 1px;
+            height: 60px;
+            background-color: #ccc;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Concesionaria Premium Quality</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacion">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#cars">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="main-header1 text-center py-5" style="background-image: url('Fotos/autos/autos/cruzefacha3.png'); background-size: cover; background-position: center; color: #ffffff;">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold mb-4">Chevrolet Cruze</h1>
+            <h2 class="lead">Descubre el diseño y la tecnología del Chevrolet Cruze</h2>
+        </div>
+    </header>
+
+    <section class="gallery container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Fotos/autos/autos/cruze.jpg" alt="Chevrolet Cruze" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2>Un estilo que destaca</h2>
+                <p>El Chevrolet Cruze combina elegancia y rendimiento con su diseño moderno, líneas fluidas y una experiencia de conducción excepcional.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Mobile-icon.png" alt="Emergencia Icono" class="card-icon" style="width: 50px; height: 50px;">
+                    <h4>Emergencia</h4>
+                    <p><strong>¡Auxilio inmediato!</strong> Presionando el botón que dice SOS, OnStar envía una alerta automática y te permite comunicarte con nuestros representantes al instante.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Tablet-icon.png" alt="Seguridad Icono" class="card-icon" style="width: 50px; height: 50px;">
+                    <h4>Seguridad</h4>
+                    <p><strong>Rastreá tu vehículo en todo momento:</strong> nuestra Central de Atención siempre On está disponible para ayudarte ante situaciones de robo o hurto. Además, con nuestra app podés verificar el estado de tu Chevrolet.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Conexion-icon.png" alt="Conexión Icono" class="card-icon" style="width: 50px; height: 50px;">
+                    <h4>Conexión Total</h4>
+                    <p><strong>¿Tenés dudas de si cerraste el auto y ya estás lejos?</strong> Bloqueá las puertas de tu Chevrolet a la distancia con la app MyChevrolet. Solo con tu celular podés localizar tu vehículo, seguir sus pasos, y recibir alertas acerca de su condición.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h4 class="tituloOnstar text-uppercase mb-5">Chevrolet Cruze: un auto con excelente rendimiento</h4>
+                <div class="container-performance my-5 d-flex align-items-center justify-content-center">
+                
+                   <div class="textos-performance">
+                    <h4 class="text-center numeroMediano">MOTOR</h4>
+                    <h6 class="text-center text-chev numeroGrande">1.4 Turbo</h6>
+                </div>
+    
+                <div class="vertical-line"></div>
+    
+                <div class="textos-performance">
+                    <h4 class="text-center text-chev numeroGrande">153 CV</h4>
+                    <h4 class="text-center numeroMediano">DE POTENCIA</h4>
+                </div>
+    
+                <div class="vertical-line"></div>
+
+                <div class="textos-performance">
+                    <h4 class="text-center text-chev numeroGrande">240 NM</h4>
+                    <h4 class="text-center numeroMediano">DE TORQUE</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="text-center my-5">INNOVACIÓN EN TODOS LOS MOMENTOS DE TU DÍA</h3>
+
+            <input type="radio" name="caracteristica" id="caract1" class="d-none" checked onchange="showTab(1)">
+            <input type="radio" name="caracteristica" id="caract2" class="d-none" onchange="showTab(2)">
+            <input type="radio" name="caracteristica" id="caract3" class="d-none" onchange="showTab(3)">
+            <input type="radio" name="caracteristica" id="caract4" class="d-none" onchange="showTab(4)">
+
+            <div class="row">
+                <label for="caract1" class="col-md-3 innovacionCard">Asistencia</label>
+                <label for="caract2" class="col-md-3 innovacionCard">Practicidad</label>
+                <label for="caract3" class="col-md-3 innovacionCard">Carga Inalámbrica</label>
+                <label for="caract4" class="col-md-3 innovacionCard">Conectividad</label>
+            </div>
+
+            <div id="tab1" class="solapas-info active">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="Fotos/asistencia2.gif" alt="Imagen Conectividad" class="imagen-solapa">
+                    </div>
+                    <div class="col-md-7">
+                        <h6>Faros con control adaptativo</h6>
+                        <p>Para evitar que ofusques la visión de otro conductor, un sensor identifica cuando un vehículo se acerca en el sentido contrario al tuyo y apaga automáticamente las luces altas.</p>
+                        <h6>Cámara de visión trasera digital HD</h6>
+                        <p>Su buena resolución y calidad de imagen te ayudan a tener una mejor visión para estacionar, incluso en lugares sin iluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="solapas-info">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="Fotos/Practicidad.gif" alt="Imagen Diseño" class="imagen-solapa">
+                    </div>
+                    <div class="col-md-7">
+                        <h6>Easy Park</h6>
+                        <p>Estacioná sin usar las manos. Easy Park es un sistema de estacionamiento que controla automáticamente los movimientos del volante, por medio de sensores que identifican los lugares, ya sean horizontales o perpendiculares.</p>
+                        <h6>Easy Entry</h6>
+                        <p>¿Querés aún más facilidad? Con Easy Entry podés desbloquear las puertas por medio de un sensor de acercamiento. Además, este sistema te permite encender el motor con un solo toque en el botón del tablero.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab3" class="solapas-info">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="Fotos/Asistencia.gif" alt="Imagen Asistencia" class="imagen-solapa">
+                    </div>
+                    <div class="col-md-7">
+                        <h6>Carga</h6>
+                        <p>Llevar el cable de tu smartphone cada vez que salís de casa, ya no es necesario. En el Cruze podés cargar la batería por medio de inducción. ¿Cómo se hace? Basta con poner el dispositivo en el espacio diseñado especialmente para guardarlo. El cargador inalámbrico de Cruze Sedán es compatible con los dispositivos que cumplen con los estándares Qi WPC y PMA (excepto iPhone 8 y iPhone X), que ya admiten la gran mayoría de los smartphones disponibles en el mercado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab4" class="solapas-info">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="Fotos/Diseño.png" alt="Imagen Tecnología" class="imagen-solapa">
+                    </div>
+                    <div class="col-md-7">
+                        <h6>Chevrolet MyLink</h6>
+                        <p>MyLink: un menú moderno e intuitivo. Usando tu voz podés conversar por mensajes, elegir rutas y acceder a tus playlists. Aprovechá MyLink x2: conectá dos celulares por medio de Bluetooth y dividí la pantalla para ver dos aplicaciones o dispositivos al mismo tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Premium Quality. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

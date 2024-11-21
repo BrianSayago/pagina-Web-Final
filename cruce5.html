@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Cruze 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .gallery .col-md-6 {
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        
+        .main-header1 {
+            background-image: url('Fotos/autos/autos/facha3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+
+        .innovacionCard {
+            flex: 1;
+            margin: 5px;
+            padding: 20px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .innovacionCard:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .solapas-info {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid white;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .solapas-info.active {
+            display: flex;
+        }
+        .imagen-solapa {
+            max-width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            width: 350px;
+        }
+        .solapas-info .texto-solapa {
+            flex: 1;
+        }
+
+        .container-performance {
+            gap: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .vertical-line {
+            width: 1px;
+            height: 60px;
+            background-color: #ccc;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Concesionaria Premium Quality</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacion">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#cars">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="main-header1 text-center py-5">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold mb-4">Chevrolet Cruze 5</h1>
+            <h2 class="lead">Descubre el diseño y la tecnología del Chevrolet Cruze 5</h2>
+        </div>
+    </header>
+
+    <section class="gallery container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Fotos/autos/autos/cruze5.png" alt="Chevrolet Cruze 5" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2>Un estilo que destaca</h2>
+                <p>El Chevrolet Cruze 5 redefine el estilo de los autos compactos con su diseño moderno, líneas agresivas y una experiencia de conducción única.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Mobile-icon.png" alt="Emergencia Icono" class="card-icon">
+                    <h4>Emergencia</h4>
+                    <p><strong>¡Auxilio inmediato!</strong> Presionando el botón SOS, OnStar envía una alerta automática y permite comunicarte con nuestros representantes al instante.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Tablet-icon.png" alt="Seguridad Icono" class="card-icon">
+                    <h4>Seguridad</h4>
+                    <p><strong>Rastreá tu vehículo:</strong> Nuestra Central de Atención está disponible para ayudarte en situaciones de robo. Con nuestra app podés verificar el estado de tu Chevrolet.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="Fotos/Icon/Conexion-icon.png" alt="Conexión Icono" class="card-icon">
+                    <h4>Conexión Total</h4>
+                    <p><strong>Control remoto:</strong> Bloqueá las puertas de tu Chevrolet a la distancia y recibí alertas sobre su condición con la app MyChevrolet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h4 class="tituloOnstar text-uppercase mb-5">Chevrolet Cruze 5: un auto con excelente rendimiento</h4>
+                <div class="container-performance my-5 d-flex align-items-center justify-content-center">
+
+                    <div class="textos-performance">
+                        <h4 class="text-center numeroMediano">MOTOR</h4>
+                        <h6 class="text-center text-chev numeroGrande">Turbo</h6>
+                    </div>
+        
+                    <div class="vertical-line"></div>
+        
+                    <div class="textos-performance">
+                        <h4 class="text-center text-chev numeroGrande">153 CV</h4>
+                        <h4 class="text-center numeroMediano">DE POTENCIA</h4>
+                    </div>
+        
+                    <div class="vertical-line"></div>
+
+                    <div class="textos-performance">
+                        <h4 class="text-center text-chev numeroGrande">245 NM</h4>
+                        <h4 class="text-center numeroMediano">DE TORQUE</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="text-center my-5">INNOVACIÓN EN TODOS LOS MOMENTOS DE TU DÍA</h3>
+
+            <input type="radio" name="caracteristica" id="caract1" class="d-none" checked onchange="showTab(1)">
+            <input type="radio" name="caracteristica" id="caract2" class="d-none" onchange="showTab(2)">
+            <input type="radio" name="caracteristica" id="caract3" class="d-none" onchange="showTab(3)">
+            <input type="radio" name="caracteristica" id="caract4" class="d-none" onchange="showTab(4)">
+
+            <div class="row">
+                <label for="caract1" class="col-md-3 innovacionCard">Conectividad</label>
+                <label for="caract2" class="col-md-3 innovacionCard">Performance</label>
+                <label for="caract3" class="col-md-3 innovacionCard">Diseño</label>
+                <label for="caract4" class="col-md-3 innovacionCard">Seguridad</label>
+            </div>
+
+            <div id="tab1" class="solapas-info active">
+                <img src="Fotos/Conectividad.png" alt="Imagen Conectividad" class="imagen-solapa">
+                <div class="texto-solapa">
+                    <h6>Chevrolet MyLink</h6>
+                    <p>MyLink: un menú moderno e intuitivo. Usando tu voz, puedes elegir rutas y acceder a tus playlists. Conecta dos celulares y usa dos aplicaciones al mismo tiempo.</p>
+                    <h6>Tecnología Exclusiva Wi-Fi</h6>
+                    <p>Disfruta de Wi-Fi a bordo, que ofrece 12 veces más potencia de señal y permite conectar hasta 7 dispositivos.</p>
+                </div>
+            </div>
+
+            <div id="tab2" class="solapas-info">
+                <img src="Fotos/autos/performance.png" alt="Imagen Performance" class="imagen-solapa">
+                <div class="texto-solapa">
+                    <h6>La tecnología también aporta una mejor performance</h6>
+                    <p>Tenés dos opciones de motores para tu Cruze 5, que ofrecen equilibrio perfecto entre performance, eficiencia energética y bajo costo de mantenimiento. Incluye motor turbo y 153 CV de potencia.</p>
+                </div>
+            </div>
+
+            <div id="tab3" class="solapas-info">
+                <img src="Fotos/Diseño.png" alt="Imagen Diseño" class="imagen-solapa">
+                <div class="texto-solapa">
+                    <h6>Diseño Sofisticado</h6>
+                    <p>El Cruze 5 cuenta con faros traseros LED, cámara de visión trasera, llantas de 17” y un interior con asientos premium en colores Jet Black y Umber.</p>
+                </div>
+            </div>
+
+            <div id="tab4" class="solapas-info">
+                <img src="Fotos/autos/seguridad2.png" alt="Imagen Seguridad" class="imagen-solapa">
+                <div class="texto-solapa">
+                    <h6>La seguridad como derecho</h6>
+                    <p>El Cruze te ofrece seguridad con control de velocidad crucero, control de estabilidad, asistente de salida en pendientes y 6 airbags (2 frontales, 2 laterales y 2 de cortina).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2024 Premium Quality. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function showTab(tabNumber) {
+            const tabs = document.querySelectorAll('.solapas-info');
+            tabs.forEach((tab, index) => {
+                tab.classList.toggle('active', index + 1 === tabNumber);
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionaria de Autos Premium Quality</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Concesionaria Premium Quality</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavegacion">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cars">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="container-fluid p-0">
+        <div class="jumbotron jumbotron-fluid text-white text-center" style="background-image: url('Fotos/fotoPortada.jpeg'); background-size: cover; height: 650px; width: 100%;">
+            <div class="container">
+                <h1 class="display-4">Encuentra el auto de tus sueños</h1>
+                <p class="lead">Ofrecemos la mejor selección de autos a los mejores precios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <h1 class="text-center mb-4">Sobre Nosotros</h1>
+        <p>En Concesionaria Premium Quality, nuestra pasión por los automóviles y el compromiso con la excelencia nos han convertido en un referente del sector automotriz. Fundada hace más de 10 años, nuestra misión ha sido ofrecer a nuestros clientes la más alta calidad en vehículos, servicios y atención personalizada.</p>
+        <p>Desde nuestros inicios, hemos comprendido que un auto no es solo un medio de transporte, sino una extensión del estilo de vida y las aspiraciones de cada persona. En Premium Quality, seleccionamos cuidadosamente cada vehículo asegurándonos de cumplir con los más altos estándares de seguridad, tecnología e innovación.</p>
+        <p>Lo que nos distingue es nuestro enfoque en el servicio al cliente, generando relaciones duraderas basadas en confianza, transparencia y respeto.</p>
+    </section>
+
+    <section id="cars" class="container my-5">
+        <h2 class="text-center mb-4">Nuestra Galería de Autos</h2>
+        <div class="row">
+      
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Fotos/autos/autos/onix.png" class="card-img-top" alt="Chevrolet Onix">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Compacto, eficiente y listo para cualquier aventura urbana.</p>
+                        <a href="onix.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Fotos/autos/autos/cruze.jpg" class="card-img-top" alt="Chevrolet Cruze">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Cruze</h5>
+                        <p class="card-text">Un sedán elegante y moderno, diseñado para brindar comodidad y tecnología.</p>
+                        <a href="cruce.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Fotos/autos/autos/cruze5.png" class="card-img-top" alt="Chevrolet Cruze 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Cruze 5</h5>
+                        <p class="card-text">Diseño compacto y deportivo, perfecto para un estilo de vida dinámico.</p>
+                        <a href="cruce5.html" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 id = "contact" class="text-center mb-4">Contacto</h1>
+    
+    <div class="form-container">
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="message-box"></div>
+    </div>
+    <br>
+    <br>
+    <h1 class="text-center mb-4">Ubicacion</h1>
+  <div class="map-container mx-auto" style="max-width: 600px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.624353629153!2d-58.42548687774947!3d-35.02550751489926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2c53aefcbec1%3A0x391483c1d5e02671!2sInstituto%20Superior%20de%20Formaci%C3%B3n%20Docente%20y%20T%C3%A9cnica%20N%C2%BA%2093%20Arturo%20Umberto%20Illia!5e0!3m2!1ses-419!2sar!4v1729638946540!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+ 
+    <button id="backToTop">Volver Arriba</button>
+    <script src="script.js"></script>
+    
+<button id="backToTop">Volver Arriba</button>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Concesionaria Premium Quality. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+     
+        $(document).ready(function() {
+            $('a.nav-link').on('click', function(e) {
+                e.preventDefault();
+                const target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top - 56
+                }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
